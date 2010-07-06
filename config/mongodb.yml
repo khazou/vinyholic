@@ -1,0 +1,14 @@
+base: &base
+  adapter: mongodb
+  database: vinyholic
+  
+development:
+  <<: *base
+  
+test:
+  <<: *base
+  database: vinyholic-test
+  
+production:
+  <<: *base
+  database: vinyholic-prod
